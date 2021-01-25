@@ -122,7 +122,7 @@ def crear_modeloFF():
     return model
 
 #----------------------------------------
-EPOCHS = 8
+EPOCHS = 800
 strategy = tf.distribute.MirroredStrategy()
 with strategy.scope():
   model = crear_modeloFF() 
