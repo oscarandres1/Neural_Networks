@@ -92,7 +92,7 @@ print(x_train.shape, y_train.shape, x_val.shape, y_val.shape, x_test.shape, y_te
 def rmse(y_true, y_pred):
 	return backend.sqrt(backend.mean(backend.square(y_pred - y_true), axis=-1))
  
-# Hidden and output nuerons for LSTM network
+# Hidden and output nuerons for 1 hidden layer network after CNN Layers
 HIDDEN_NEURONS = 7
 OUT_NEURONS = 1
 
